@@ -24,6 +24,13 @@ public class MovieController {
         return movieRepository.getById(id);
 
     }
+    @QueryMapping(name = "movies")
+    public List<Movie> getAllMovies(){
+
+        return movieRepository.getMovieList();
+
+
+    }
 
     //Movie(Long id, String title, Integer year, List<String> genres, String director)
     @MutationMapping

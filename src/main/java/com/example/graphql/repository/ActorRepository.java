@@ -10,6 +10,10 @@ import java.util.List;
 @Repository
 public class ActorRepository {
 
+    public List<Actor> getActorList() {
+        return actorList;
+    }
+
     private List<Actor> actorList;
     private MovieRepository movieRepository;
     public ActorRepository(MovieRepository movieRepository ) {

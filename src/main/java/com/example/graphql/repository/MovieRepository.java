@@ -33,4 +33,8 @@ public class MovieRepository {
     public void addMovie( Movie newMovie) {
         movieList.add(newMovie);
     }
+
+    public List<Movie> getMovieList(){
+        return movieList;
+    }
 }
